@@ -1,0 +1,4 @@
+Gatehouse
+Great_Hall
+Dining_Hall
+Throne_Room
