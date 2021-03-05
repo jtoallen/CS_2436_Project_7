@@ -13,7 +13,6 @@ import java.util.Scanner;
 
 public class castle {
 
-   static String Choice;
 
     static ArrayList<Room> Vertex = new ArrayList<Room>();
     static ArrayList<Room> Path = new ArrayList<Room>();
@@ -76,7 +75,45 @@ public class castle {
 
         System.out.println(Count + " edges read from file");
         System.out.println("Press <Enter> to Continue");
-        Choice = in.nextLine();
+        String Enter = in.nextLine();
+
+        Room Start = Vertex.get(0);
+        Room T = Start;
+        char Choice = ' ';
+        System.out.println("you are in " + T.RoomName);
+        while (Choice != 'q') {
+            System.out.println("=================");
+//            System.out.println("you are in " + T.RoomName);
+            System.out.println("=====================");
+            //DRAW ASCII art to show where user is or tell them
+            System.out.println("Where would you like to travel?");
+            System.out.println("n e s w = move  or q = quit");
+            System.out.println("Enter command: ");
+            Choice = in.nextLine().charAt(0);
+            if(Choice == 'n' && T.South !=null) {
+                T = T.North;
+            }if(Choice == 'e' && T.East !=null) {
+                T = T.East;
+            }if(Choice == 's' && T.South !=null) {
+                T = T.South;
+            }if(Choice == 'w' && T.West !=null) {
+                T = T.West;
+            }
+            if (Choice == 'f') {
+                System.out.println("Where would you like to travel to: ");
+                //step through vertex array list to get pointer to index vertex for FROM ROOM
+                //step through vertex array to get pointer for TO Room
+
+//                Scanner in = new Scanner(System.in);
+//                Scanner roomTo = in.next();
+
+                Dijkstra(Vertex.get(0), Vertex.get(3));
+                for(int i = 0; i < Path.size(); i++){
+                    System.out.println("The shortest path from " + Path.get(i).RoomName);
+                }
+
+            }
+        }
 
     } //ends main
 
@@ -92,7 +129,7 @@ public class castle {
 
     } //ends Room
 
-    public void Dijkstra(Room Start, Room Finish) {
+    public static void Dijkstra(Room Start, Room Finish) {
         // set distance to all rooms (except for Start) to 1000 and visited = false
         for (int i=0; i<Vertex.size(); i++)
         {
@@ -151,6 +188,5 @@ public class castle {
             Path.add(0,Temp);
         }
     } //ends Dijkstra's
-
 
 } //ends castle
