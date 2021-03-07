@@ -7,21 +7,20 @@ Charms_Hall West Charms_Class
 Charms_Hall North Tower_1
 Charms_Class North Tower_2
 Great_Hall South Main_Passage
-Main_Passage East Upper_Passage
-Upper_Passage North Gryffindor_Lodge
-Gryffindor_Lodge East Gryffindor_Boys
-Gryffindor_Lodge West Gryffindor_Girls
-Gryffindor_Lodge North Grand_Passage
+Main_Passage East Gryffindor_Lodge
+Gryffindor_Lodge North Gryffindor_Boys
+Gryffindor_Lodge South Gryffindor_Girls
+Gryffindor_Lodge East Grand_Passage
 Grand_Passage East Tower_2
-Grand_Passage West Tower_1
 Main_Passage South Lower_Passage
 Lower_Passage South Potions_Class
 Potions_Class East Slytherin_Lodge
 Slytherin_Lodge North Slytherin_Girls
 Slytherin_Lodge South Slytherin_Boys
 Main_Passage West Snapes_Stores
-Snapes_Stores West Train_Station
+Snapes_Stores West Transfiguration
 Snapes_Stores North Charms_Hall
+
 
 
 

@@ -77,35 +77,50 @@ public class castle {
         System.out.println("Press <Enter> to Continue");
         String Enter = in.nextLine();
 
-        Room Start = Vertex.get(0);
-        Room T = Start;
+        Room T = Vertex.get(0);
         char Choice = ' ';
         System.out.println("you are in " + T.RoomName);
         while (Choice != 'q') {
             System.out.println("=================");
 //            System.out.println("you are in " + T.RoomName);
-            System.out.println("=====================");
+//            System.out.println("=====================");
             //DRAW ASCII art to show where user is or tell them
             System.out.println("Where would you like to travel?");
-            System.out.println("n e s w = move  or q = quit");
+            System.out.println("n e s w = move, f = find path, or q = quit");
             System.out.println("Enter command: ");
             Choice = in.nextLine().charAt(0);
-            if(Choice == 'n' && T.South !=null) {
+            if(Choice == 'n' && T.North !=null) {
                 T = T.North;
+                System.out.println("you are in " + T.RoomName);
             }if(Choice == 'e' && T.East !=null) {
                 T = T.East;
+                System.out.println("you are in " + T.RoomName);
             }if(Choice == 's' && T.South !=null) {
                 T = T.South;
+                System.out.println("you are in " + T.RoomName);
             }if(Choice == 'w' && T.West !=null) {
                 T = T.West;
+                System.out.println("you are in " + T.RoomName);
+            }
+            if (Choice != 'n' && Choice != 'e' &&
+                    Choice != 's' && Choice != 'w'
+                    && Choice != 'f' && Choice != 'q'){
+                System.out.println("Invalid choice. Please make a valid entry.");
             }
             if (Choice == 'f') {
-                System.out.println("Where would you like to travel to: ");
+                //this will call Dijkstra's to find the shortest path
                 //step through vertex array list to get pointer to index vertex for FROM ROOM
                 //step through vertex array to get pointer for TO Room
 
-//                Scanner in = new Scanner(System.in);
+
+//                String roomTo;
+////                in = new Scanner(System.in);
+////                Scanner roomTo = in.next();
+//                System.out.println("Where would you like to travel to: ");
+//                in = new Scanner(System.in);
 //                Scanner roomTo = in.next();
+//                Vertex.get(IndexFrom).RoomName.equals(roomTo);
+
 
                 Dijkstra(Vertex.get(0), Vertex.get(3));
                 for(int i = 0; i < Path.size(); i++){
@@ -114,6 +129,7 @@ public class castle {
 
             }
         }
+        System.out.println("You have chosen to exit the program");
 
     } //ends main
 

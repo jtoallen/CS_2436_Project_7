@@ -16,5 +16,6 @@ Gryffindor_Girls
 Slytherin_Lodge
 Slytherin_Boys
 Slytherin_Girls
-Train_Station
+Transfiguration
 Courtyard
+East_Wing
