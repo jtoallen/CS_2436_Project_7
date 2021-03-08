@@ -19,3 +19,4 @@ Slytherin_Girls
 Transfiguration
 Courtyard
 East_Wing
+Upper_Passage
