@@ -77,12 +77,23 @@ public class castle {
         char Choice = ' ';
         System.out.println("you are in " + T.RoomName);
         while (Choice != 'q') {
+            if (T.North == null) {
+                System.out.println("------------------");
+            } else {
+                System.out.println("-----------|                 |-----------");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("                              ");
+                System.out.println("                              ");
+                System.out.println("           |                 |");
+                System.out.println("-----------|                 |-----------");
+            }
             System.out.println("=================");
 //            System.out.println("you are in " + T.RoomName);
 //            System.out.println("=====================");
             //DRAW ASCII art to show where user is or tell them
             System.out.println("Where would you like to travel?");
-            System.out.println("n e s w = move, f = find path, or q = quit");
+            System.out.println("n, e, s, w = move, f = find path, or q = quit");
             System.out.println("Enter command: ");
             Choice = in.nextLine().charAt(0);
             if (Choice == 'n' && T.North != null) {
@@ -120,29 +131,32 @@ public class castle {
                 // index vertex for Current/From Room
                 //2 step through vertex array to get
                 // pointer for To Room
-
-//                String roomTo;
-////                in = new Scanner(System.in);
-////                Scanner roomTo = in.next();
-//                System.out.println("Where would you like to travel to: ");
-//                in = new Scanner(System.in);
-//                Scanner roomTo = in.next();
 //                Vertex.get(IndexFrom).RoomName.equals(roomTo);
 
-//                String roomStart, roomFinish;
-//                roomStart = T.RoomName;
-//                System.out.println(T.RoomName);
-//                roomFinish = in.nextLine();
+                String RoomFinish;
+                System.out.println("Where would you like to travel to: ");
+                RoomFinish = in.nextLine();
+                int IndexTo = 0;
+                String roomStart = T.RoomName;
+//                System.out.println(T.RoomName); //test code
 
-
-                Dijkstra(Vertex.get(0), Vertex.get(18));
-//                System.out.println(Vertex.get(18).RoomName);
+                while (IndexTo < Vertex.size() &&
+                        !Vertex.get(IndexTo).RoomName.equals(RoomFinish)) {
+                    IndexTo++;
+                }
+                if (IndexTo == Vertex.size()) {
+                    System.out.println("Path not found");
+                }
+                Dijkstra(T, Vertex.get(IndexTo));
+                System.out.println("Path found");
+//                Dijkstra(Vertex.get(0), Vertex.get(18)); //test code
+//                System.out.println(Vertex.get(18).RoomName); //test code
                 System.out.println("Shortest path = " + (Path.size() - 1));
                 for (int i = 0; i < Path.size(); i++) {
                     System.out.println(Path.get(i).RoomName);
                 }
                 System.out.println("=================");
-                System.out.println("you are in " + T.RoomName);
+                System.out.println("You are in " + T.RoomName);
             }
         }
 //        System.out.println("Invalid entry. Please try again.");
