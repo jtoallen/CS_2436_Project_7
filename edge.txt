@@ -2,10 +2,10 @@ Gatehouse South Great_Hall
 Gatehouse West Tower_1
 Gatehouse East Tower_2
 Great_Hall West Charms_Hall
+West_Wing North Charms_Hall
 Great_Hall East Courtyard
 Charms_Hall West Charms_Class
 Charms_Hall North Tower_1
-Charms_Class North Tower_2
 Great_Hall South Main_Passage
 Main_Passage East East_Wing
 East_Wing North Upper_Passage
@@ -14,16 +14,20 @@ Gryffindor_Lodge East Gryffindor_Boys
 Gryffindor_Lodge West Gryffindor_Girls
 Gryffindor_Lodge North Grand_Passage
 Grand_Passage East Tower_2
-Grand_Passage West Tower_1
+Grand_Passage North Skywalk
+Tower_2 West Skywalk
+Tower_1 East Skywalk
 Main_Passage South Lower_Passage
 Lower_Passage South Potions_Class
 Potions_Class East Slytherin_Lodge
 Slytherin_Lodge North Slytherin_Girls
 Slytherin_Lodge South Slytherin_Boys
-Main_Passage West Snapes_Stores
+Main_Passage West West_Wing
+West_Wing West Snapes_Stores
 Snapes_Stores West Transfiguration
 Snapes_Stores North Charms_Hall
-
+Slytherin_Lodge East Tower_3
+Tower_3 North Tower_2
 
 
 

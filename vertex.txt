@@ -20,3 +20,6 @@ Transfiguration
 Courtyard
 East_Wing
 Upper_Passage
+West_Wing
+Skywalk
+Tower_3
