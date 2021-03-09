@@ -96,22 +96,55 @@ public class castle {
             System.out.println("n, e, s, w = move, f = find path, or q = quit");
             System.out.println("Enter command: ");
             Choice = in.nextLine().charAt(0);
-            if (Choice == 'n' && T.North != null) {
-                T = T.North;
-                System.out.println("you are in " + T.RoomName);
+            if (Choice == 'n') {
+                if (T.North != null) {
+                    T = T.North;
+                    System.out.println("you are in " + T.RoomName);
+                } else {
+                    System.out.println("There is no path in that direction." +
+                            "Please select another option.");
+                }
             }
-            if (Choice == 'e' && T.East != null) {
-                T = T.East;
-                System.out.println("you are in " + T.RoomName);
+            if (Choice == 'e') {
+                if (T.East != null) {
+                    T = T.East;
+                    System.out.println("You are in " + T.RoomName);
+                } else {
+                    System.out.println("There is no path in that direction." +
+                            "Please select another option.");
+                }
             }
-            if (Choice == 's' && T.South != null) {
-                T = T.South;
-                System.out.println("you are in " + T.RoomName);
+//            T.East != null) {
+//                T = T.East;
+//                System.out.println("you are in " + T.RoomName);
+//            }
+//            if (Choice == 's' && T.South != null) {
+//                T = T.South;
+//                System.out.println("you are in " + T.RoomName);
+//            }
+            if (Choice == 's') {
+                if (T.South != null) {
+                    T = T.South;
+                    System.out.println("You are in " + T.RoomName);
+                } else {
+                    System.out.println("There is no path in that direction." +
+                            "Please select another option");
+                }
             }
-            if (Choice == 'w' && T.West != null) {
-                T = T.West;
-                System.out.println("you are in " + T.RoomName);
+            if (Choice == 'w') {
+                if (T.West != null) {
+                    T = T.West;
+                    System.out.println("You are in " + T.RoomName);
+
+                } else {
+                    System.out.println("There is no path in that direction." +
+                            "Please select another option");
+                }
             }
+//            if (Choice == 'w' && T.West != null) {
+//                T = T.West;
+//                System.out.println("you are in " + T.RoomName);
+//            }
             if (Choice == 'q') {
                 System.out.println("You have chosen to exit the program");
             }
