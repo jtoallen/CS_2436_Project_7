@@ -23,3 +23,4 @@ Upper_Passage
 West_Wing
 Skywalk
 Tower_3
+Dumbledore_Office

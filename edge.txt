@@ -1,6 +1,5 @@
 Gatehouse South Great_Hall
 Gatehouse West Tower_1
-Gatehouse East Tower_2
 Great_Hall West Charms_Hall
 West_Wing North Charms_Hall
 Great_Hall East Courtyard
@@ -9,6 +8,9 @@ Charms_Hall North Tower_1
 Great_Hall South Main_Passage
 Main_Passage East East_Wing
 East_Wing North Upper_Passage
+East_Wing East Dumbledore_Office
+Dumbledore_Office South Tower_3
+Dumbledore_Office North Tower_2
 Upper_Passage North Gryffindor_Lodge
 Gryffindor_Lodge East Gryffindor_Boys
 Gryffindor_Lodge West Gryffindor_Girls
@@ -27,7 +29,7 @@ West_Wing West Snapes_Stores
 Snapes_Stores West Transfiguration
 Snapes_Stores North Charms_Hall
 Slytherin_Lodge East Tower_3
-Tower_3 North Tower_2
+Tower_3 North Dumbledore_Office
 
 
 
