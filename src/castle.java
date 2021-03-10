@@ -245,8 +245,6 @@ public class castle {
                 System.out.println("|---------------------------------------|");
             }
             System.out.println("==================================");
-//            System.out.println("you are in " + T.RoomName);
-//            System.out.println("=====================");
             //DRAW ASCII art to show where user is or tell them
             System.out.println("Where would you like to travel?");
             System.out.println("n, e, s, w = move, f = find path, or q = quit");
