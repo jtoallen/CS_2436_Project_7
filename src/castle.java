@@ -77,20 +77,8 @@ public class castle {
         char Choice = ' ';
         System.out.println("you are in " + T.RoomName);
         while (Choice != 'q') {
-//            if (T.North == null) {
-//                System.out.println("------------------");
-//            }
-//            if (T.South == null) {
-//                System.out.println("------------------");
-//
-//            }
-//            if (T.East == null) {
-//                System.out.println("------------------");
-//            }
-//            if (T.West == null) {
-//                System.out.println("------------------");
-//            }
 
+            //Prints ASCII Art for Rooms in Castle
             if (T.North != null && T.East != null &&
                     T.West != null && T.South != null) {
                 System.out.println("|----------                 ------------|");
@@ -256,17 +244,6 @@ public class castle {
                 System.out.println("           |                 |");
                 System.out.println("|---------------------------------------|");
             }
-
-//            else {
-//                System.out.println("|----------                 ------------|");
-//                System.out.println("           |                 |");
-//                System.out.println("           |                 |");
-//                System.out.println("                              ");
-//                System.out.println("                              ");
-//                System.out.println("           |                 |");
-//                System.out.println("           |                 |");
-//                System.out.println("|----------                 ------------|");
-//            }
             System.out.println("==================================");
 //            System.out.println("you are in " + T.RoomName);
 //            System.out.println("=====================");
@@ -295,14 +272,7 @@ public class castle {
                             "You are still in " + T.RoomName);
                 }
             }
-//            T.East != null) {
-//                T = T.East;
-//                System.out.println("you are in " + T.RoomName);
-//            }
-//            if (Choice == 's' && T.South != null) {
-//                T = T.South;
-//                System.out.println("you are in " + T.RoomName);
-//            }
+
             if (Choice == 's') {
                 if (T.South != null) {
                     T = T.South;
@@ -324,13 +294,7 @@ public class castle {
                             "You are still in " + T.RoomName);
                 }
             }
-//            if (Choice == 'w' && T.West != null) {
-//                T = T.West;
-//                System.out.println("you are in " + T.RoomName);
-//            }
-//            if (Choice == 'q') {
-//                System.out.println("You have chosen to exit the program");
-//            }
+
             if (Choice != 'n' && Choice != 'e' &&
                     Choice != 's' && Choice != 'w'
                     && Choice != 'f' && Choice != 'q') {
@@ -338,10 +302,7 @@ public class castle {
                 System.out.println("you are in " + T.RoomName);
 
             }
-//            if (T.West == null || T.East == null ||
-//                    T.North == null || T.South == null) {
-//                System.out.println("There is not a room in that direction");
-//            }
+
             if (Choice == 'f') {
                 //this will call Dijkstra's to find the shortest path
                 //ask user where they want to travel to
@@ -367,8 +328,6 @@ public class castle {
                 }
                 Dijkstra(T, Vertex.get(IndexTo));
                 System.out.println("Path found");
-//                Dijkstra(Vertex.get(0), Vertex.get(18)); //test code
-//                System.out.println(Vertex.get(18).RoomName); //test code
                 System.out.println("Shortest path = " + (Path.size() - 1));
                 for (int i = 0; i < Path.size(); i++) {
                     System.out.println(Path.get(i).RoomName);
@@ -378,8 +337,6 @@ public class castle {
             }
         }
         System.out.println("You have chosen to exit the program");
-
-//        System.out.println("Invalid entry. Please try again.");
 
     } //ends main
 
