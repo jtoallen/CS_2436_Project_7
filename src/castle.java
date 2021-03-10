@@ -77,18 +77,197 @@ public class castle {
         char Choice = ' ';
         System.out.println("you are in " + T.RoomName);
         while (Choice != 'q') {
-            if (T.North == null) {
-                System.out.println("------------------");
-            } else {
-                System.out.println("-----------|                 |-----------");
+//            if (T.North == null) {
+//                System.out.println("------------------");
+//            }
+//            if (T.South == null) {
+//                System.out.println("------------------");
+//
+//            }
+//            if (T.East == null) {
+//                System.out.println("------------------");
+//            }
+//            if (T.West == null) {
+//                System.out.println("------------------");
+//            }
+
+            if (T.North != null && T.East != null &&
+                    T.West != null && T.South != null) {
+                System.out.println("|----------                 ------------|");
                 System.out.println("           |                 |");
                 System.out.println("           |                 |");
                 System.out.println("                              ");
                 System.out.println("                              ");
                 System.out.println("           |                 |");
-                System.out.println("-----------|                 |-----------");
+                System.out.println("           |                 |");
+                System.out.println("|----------                 ------------|");
             }
-            System.out.println("=================");
+
+            if (T.North == null && T.East != null &&
+                    T.West != null && T.South != null) {
+                System.out.println("|---------------------------------------|");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("                              ");
+                System.out.println("                              ");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("|----------                 ------------|");
+            }
+            if (T.South == null && T.East != null &&
+                    T.West != null && T.North != null) {
+                System.out.println("|----------                 ------------|");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("                              ");
+                System.out.println("                              ");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("|---------------------------------------|");
+            }
+            if (T.South == null && T.East != null &&
+                    T.West != null && T.North == null) {
+                System.out.println("|---------------------------------------|");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("                              ");
+                System.out.println("                              ");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("|---------------------------------------|");
+            }
+            if (T.East == null && T.North != null && T.West != null && T.South != null) {
+                System.out.println("|----------                 ------------|");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("                             |");
+                System.out.println("                             |");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("|----------                 ------------|");
+            }
+            if (T.West == null && T.North != null && T.East != null &&
+                    T.South != null) {
+                System.out.println("|----------                 ------------|");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("           |                  ");
+                System.out.println("           |                  ");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("|----------                 ------------|");
+            }
+            if (T.West == null && T.North != null && T.East == null &&
+                    T.South != null) {
+                System.out.println("|----------                 ------------|");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("|----------                 ------------|");
+            }
+            if (T.West == null && T.North == null && T.East != null &&
+                    T.South == null) {
+                System.out.println("|---------------------------------------|");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("           |                  ");
+                System.out.println("           |                  ");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("|---------------------------------------|");
+            }
+            if (T.West == null && T.North != null && T.East != null &&
+                    T.South == null) {
+                System.out.println("|---------------------------------------|");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("           |                  ");
+                System.out.println("           |                  ");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("|---------------------------------------|");
+            }
+            if (T.West != null && T.North == null && T.East == null &&
+                    T.South != null) {
+                System.out.println("|---------------------------------------|");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("                             |");
+                System.out.println("                             |");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("|----------                 ------------|");
+            }
+            if (T.West != null && T.North != null && T.East == null &&
+                    T.South == null) {
+                System.out.println("|----------                 ------------|");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("                             |");
+                System.out.println("                             |");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("|---------------------------------------|");
+            }
+            if (T.West == null && T.North == null && T.East != null &&
+                    T.South != null) {
+                System.out.println("|---------------------------------------|");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("           |                  ");
+                System.out.println("           |                  ");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("|----------                 ------------|");
+            }
+            if (T.West != null && T.North == null && T.East == null &&
+                    T.South == null) {
+                System.out.println("|---------------------------------------|");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("                             |");
+                System.out.println("                             |");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("|---------------------------------------|");
+            }
+            if (T.West == null && T.North == null && T.East == null &&
+                    T.South != null) {
+                System.out.println("|---------------------------------------|");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("|----------                 ------------|");
+            }
+            if (T.West == null && T.North != null && T.East == null &&
+                    T.South == null) {
+                System.out.println("|----------                 ------------|");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("           |                 |");
+                System.out.println("|---------------------------------------|");
+            }
+
+//            else {
+//                System.out.println("|----------                 ------------|");
+//                System.out.println("           |                 |");
+//                System.out.println("           |                 |");
+//                System.out.println("                              ");
+//                System.out.println("                              ");
+//                System.out.println("           |                 |");
+//                System.out.println("           |                 |");
+//                System.out.println("|----------                 ------------|");
+//            }
+            System.out.println("==================================");
 //            System.out.println("you are in " + T.RoomName);
 //            System.out.println("=====================");
             //DRAW ASCII art to show where user is or tell them
@@ -101,8 +280,9 @@ public class castle {
                     T = T.North;
                     System.out.println("you are in " + T.RoomName);
                 } else {
-                    System.out.println("There is no path in that direction." +
-                            "Please select another option.");
+                    System.out.println("There is no path in that direction. " +
+                            "Please select another direction. " +
+                            "You are still in " + T.RoomName);
                 }
             }
             if (Choice == 'e') {
@@ -110,8 +290,9 @@ public class castle {
                     T = T.East;
                     System.out.println("You are in " + T.RoomName);
                 } else {
-                    System.out.println("There is no path in that direction." +
-                            "Please select another option.");
+                    System.out.println("There is no path in that direction. " +
+                            "Please select another direction. " +
+                            "You are still in " + T.RoomName);
                 }
             }
 //            T.East != null) {
@@ -127,8 +308,9 @@ public class castle {
                     T = T.South;
                     System.out.println("You are in " + T.RoomName);
                 } else {
-                    System.out.println("There is no path in that direction." +
-                            "Please select another option");
+                    System.out.println("There is no path in that direction. " +
+                            "Please select another direction. " +
+                            "You are still in " + T.RoomName);
                 }
             }
             if (Choice == 'w') {
@@ -137,21 +319,24 @@ public class castle {
                     System.out.println("You are in " + T.RoomName);
 
                 } else {
-                    System.out.println("There is no path in that direction." +
-                            "Please select another option");
+                    System.out.println("There is no path in that direction. " +
+                            "Please select another direction. " +
+                            "You are still in " + T.RoomName);
                 }
             }
 //            if (Choice == 'w' && T.West != null) {
 //                T = T.West;
 //                System.out.println("you are in " + T.RoomName);
 //            }
-            if (Choice == 'q') {
-                System.out.println("You have chosen to exit the program");
-            }
+//            if (Choice == 'q') {
+//                System.out.println("You have chosen to exit the program");
+//            }
             if (Choice != 'n' && Choice != 'e' &&
                     Choice != 's' && Choice != 'w'
                     && Choice != 'f' && Choice != 'q') {
                 System.out.println("Invalid choice. Please make a valid entry.");
+                System.out.println("you are in " + T.RoomName);
+
             }
 //            if (T.West == null || T.East == null ||
 //                    T.North == null || T.South == null) {
@@ -192,6 +377,8 @@ public class castle {
                 System.out.println("You are in " + T.RoomName);
             }
         }
+        System.out.println("You have chosen to exit the program");
+
 //        System.out.println("Invalid entry. Please try again.");
 
     } //ends main

@@ -15,7 +15,6 @@ Upper_Passage North Gryffindor_Lodge
 Gryffindor_Lodge East Gryffindor_Boys
 Gryffindor_Lodge West Gryffindor_Girls
 Gryffindor_Lodge North Grand_Passage
-Grand_Passage East Tower_2
 Grand_Passage North Skywalk
 Tower_2 West Skywalk
 Tower_1 East Skywalk
@@ -27,7 +26,7 @@ Slytherin_Lodge South Slytherin_Boys
 Main_Passage West West_Wing
 West_Wing West Snapes_Stores
 Snapes_Stores West Transfiguration
-Snapes_Stores North Charms_Hall
+Snapes_Stores North Charms_Class
 Slytherin_Lodge East Tower_3
 Tower_3 North Dumbledore_Office
 
